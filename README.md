@@ -1,12 +1,31 @@
+***WARNING: THIS REPO IS AN AUTO-GENERATED COPY.*** *This repo has been copied from [Gruntwork’s](https://gruntwork.io/) GitHub repositories so that you can consume it from your company’s own internal Git repositories. This copy is automatically created and updated by the `repo-copier` CLI tool. If you need to make changes to this repo, you should make the changes in a separate fork, and NOT make changes directly in this repo, as otherwise, the `repo-copier` will overwrite your changes! Please see the `repo-copier` [documentation](https://github.com/terraform-modules-krish/repo-copier) for more information on how the code is copied, how cross-references are updated, how the changelog is handled, etc.*
+
+***
+
+_You may find it valuable to view the following resources in the original repo. If these links give you a 404, visit https://app.gruntwork.io to gain access or email support@gruntwork.io if you need assistance._
+
+[Home Page](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example/) |
+[Pull Requests](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example/pulls) |
+[Issues](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example/issues) |
+[Releases and Assets](https://github.com/gruntwork-io/terragrunt-infrastructure-live-example/releases)
+
+_Alternatively, you can view a copied version of the resources listed above._
+
+[Pull Requests](https://github.com/terraform-modules-krish/terragrunt-infrastructure-live-example/blob/master/.github/PULL_REQUESTS.md) |
+[Issues](https://github.com/terraform-modules-krish/terragrunt-infrastructure-live-example/blob/master/.github/ISSUES.md) |
+[ChangeLog](https://github.com/terraform-modules-krish/terragrunt-infrastructure-live-example/blob/master/.github/CHANGELOG.md)
+
+***
+
 [![Maintained by Gruntwork.io](https://img.shields.io/badge/maintained%20by-gruntwork.io-%235849a6.svg)](https://gruntwork.io/?ref=repo_terragrunt-infra-live-example)
 
 # Example infrastructure-live for Terragrunt
 
 This repo, along with the [terragrunt-infrastructure-modules-example
-repo](https://github.com/gruntwork-io/terragrunt-infrastructure-modules-example), show an example file/folder structure
-you can use with [Terragrunt](https://github.com/gruntwork-io/terragrunt) to keep your
+repo](https://github.com/terraform-modules-krish/terragrunt-infrastructure-modules-example), show an example file/folder structure
+you can use with [Terragrunt](https://github.com/terraform-modules-krish/terragrunt) to keep your
 [Terraform](https://www.terraform.io) code DRY. For background information, check out the [Keep your Terraform code
-DRY](https://github.com/gruntwork-io/terragrunt#keep-your-terraform-code-dry) section of the Terragrunt documentation.
+DRY](https://github.com/terraform-modules-krish/terragrunt#keep-your-terraform-code-dry) section of the Terragrunt documentation.
 
 This repo shows an example of how to use the modules from the `terragrunt-infrastructure-modules-example` repo to
 deploy an Auto Scaling Group (ASG) and a MySQL DB across three environments (qa, stage, prod) and two AWS accounts
@@ -31,7 +50,7 @@ you are interested in battle-tested, production-ready Terraform code, check out 
 ### Pre-requisites
 
 1. Install [Terraform](https://www.terraform.io/) version `1.1.4` and
-   [Terragrunt](https://github.com/gruntwork-io/terragrunt) version `v0.36.0` or newer.
+   [Terragrunt](https://github.com/terraform-modules-krish/terragrunt) version `v0.36.0` or newer.
 1. Update the `bucket` parameter in the root `terragrunt.hcl`. We use S3 [as a Terraform
    backend](https://www.terraform.io/docs/backends/types/s3.html) to store your
    Terraform state, and S3 bucket names must be globally unique. The name currently in
@@ -137,7 +156,7 @@ Where:
 
 * **Resource**: Within each environment, you deploy all the resources for that environment, such as EC2 Instances, Auto
   Scaling Groups, ECS Clusters, Databases, Load Balancers, and so on. Note that the Terraform code for most of these
-  resources lives in the [terragrunt-infrastructure-modules-example repo](https://github.com/gruntwork-io/terragrunt-infrastructure-modules-example).
+  resources lives in the [terragrunt-infrastructure-modules-example repo](https://github.com/terraform-modules-krish/terragrunt-infrastructure-modules-example).
 
 ## Creating and using root (account) level variables
 
